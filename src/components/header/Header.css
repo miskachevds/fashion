@@ -22,6 +22,34 @@
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
-.header_nav {}
+.header_nav {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0.01em;
+}
+
+.header_nav ul {
+    display: flex;
+    column-gap: 65px;
+    align-items: center;
+}
+
+.header_nav a {
+    color: var(--textColor);
+}
+
+.header_nav-btn,a.header_nav-btn {
+    padding: 13px 22px 17px;
+    border-radius: 7px;
+    background-color: #000;
+
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 1.5;
+    letter-spacing: -0.03em;
+    color: #fefefe;
+}

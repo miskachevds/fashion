@@ -1,0 +1,19 @@
+.promo {
+    margin-bottom: 63px;
+}
+
+.container {}
+
+.promo_content {
+    border-radius: 59px;
+    background-color: #f4f6f5;
+
+    display: flex;
+    column-gap: 24px;
+    padding-top: 68px;
+    padding-left: 120px;
+}
+
+.promo_text {}
+
+.promo_img {}
