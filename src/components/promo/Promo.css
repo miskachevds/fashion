@@ -17,3 +17,32 @@
 .promo_text {}
 
 .promo_img {}
+
+.promo_title {
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 1.25;
+    margin-bottom: 40px;
+}
+
+.promo_desc {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+}
+
+.promo_btn-wrapper {}
+
+.promo_btn {
+    padding: 18px 40px;
+
+    background: #000;
+    border-radius: 10px;
+
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.5;
+    
+    color: #fff;
+}
