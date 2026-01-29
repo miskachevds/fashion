@@ -19,6 +19,7 @@
 .promo_img {}
 
 .promo_title {
+    max-width: 480px;
     font-weight: 900;
     font-size: 96px;
     line-height: 1.25;
@@ -28,21 +29,59 @@
 .promo_desc {
     font-weight: 400;
     font-size: 32px;
-    line-height: 48px;
+    /* line-height: 48px; */
+    line-height: (48/32);
     letter-spacing: -0.05em;
+    margin-bottom: 32px;
 }
 
-.promo_btn-wrapper {}
+.promo_btn-wrapper {
+    display: flex;
+    column-gap: 34px;
+    align-items: center;
+}
+
+.promo_btn-wrapper::before {
+    content: "";
+    display: inline-block;
+    width: 190px;
+    height: 32px;
+    background-image: url('./../../img/icons/decor-yellow.svg');
+}
 
 .promo_btn {
     padding: 18px 40px;
-
     background: #000;
     border-radius: 10px;
-
     font-weight: 500;
     font-size: 30px;
     line-height: 1.5;
-    
     color: #fff;
+}
+
+.highlight{
+    position: relative;
+    display: inline-block;
+}
+
+.highlight span{
+    position: relative;
+    /* z-index: 1; */
+}
+
+.highlight::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: -12px;
+    bottom: -0px;
+    left: -20px;
+    right: -160px;
+    background-color: #fff;
+    transform: rotate(-2deg);
+}
+
+.highlight--yellow::before{
+    background-color: var(--yellow);
+    right: -110px;
 }
