@@ -1,4 +1,8 @@
+import Card from '../card/Card';
 import './Arrivals.css';
+import cat01Img from './../../img/categories/cat-01.jpg';
+import cat02Img from './../../img/categories/cat-02.jpg';
+import cat03Img from './../../img/categories/cat-03.jpg';
 
 const Arrivals = () => {
     return ( <section className="arrivals">
@@ -7,9 +11,10 @@ const Arrivals = () => {
                 <h2 className='title-2'>NEW ARRIVALS</h2>
             </div>
             <div className="arrivals_cards">
-                <div>Card1</div>
-                <div>Card2</div>
-                <div>Card3</div>
+                <Card title="Hoodies & Sweetshirt" img={cat01Img}/>
+                <Card title="Coats & Parkas" img={cat02Img}/>
+                <Card title="Tees & T-Shirt"img={cat03Img}/>
+                
             </div>
         </div>
     </section> );
